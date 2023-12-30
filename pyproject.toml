@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "rcci-playground"
+version = "0.1.0"
+description = ""
+authors = ["Jon Sampson <jon.sampson@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+pandas = "^2.1.4"
+python = "^3.10"
+selenium = "^4.16.0"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.8.0"
+pandas-stubs = "^2.1.4.231227"
+pytest = "^7.4.3"
+pytest-cov = "^4.1.0"
+pytest-mock = "^3.12.0"
+ruff = "^0.1.9"
+tox = "^4.11.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
