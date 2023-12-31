@@ -16,4 +16,4 @@ def scrape() -> str:
     driver = webdriver.Chrome()
     price = get_price(driver=driver)
     print('found price: ' + price)
-    return price
+    return float(price.replace('$', '').replace(',', ''))

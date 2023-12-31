@@ -19,6 +19,10 @@ pytest-mock = "^3.12.0"
 ruff = "^0.1.9"
 tox = "^4.11.4"
 
+
+[tool.poetry.group.reporting.dependencies]
+matplotlib = "^3.8.2"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
