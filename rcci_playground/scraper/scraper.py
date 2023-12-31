@@ -11,7 +11,7 @@ def get_price(driver : webdriver.Chrome) -> str:
     quote_element = date_element.find_element(By.XPATH, '../..')
     return quote_element.find_element(By.XPATH, './div[2]/span/p').text
 
-def scrape() -> str:
+def scrape() -> float:
     print('scraper')
     driver = webdriver.Chrome()
     price = get_price(driver=driver)
